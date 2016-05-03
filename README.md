@@ -5,7 +5,8 @@ This package is an add-on to the hydrodynamic model ANUGA. These operators are u
 
 Download ANUGA from https://github.com/GeoscienceAustralia/anuga_core
 
-<br><br>
+<br>
+
 ------
 #### Basic installation
 ------
@@ -24,7 +25,8 @@ import anuga
 print anuga.__path__
 ```
 
-<br><br>
+<br>
+
 ------
 ### Installation with version control
 ------
