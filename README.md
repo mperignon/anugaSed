@@ -5,6 +5,8 @@ This package is an add-on to the hydrodynamic model ANUGA. These operators are u
 
 Download ANUGA from https://github.com/GeoscienceAustralia/anuga_core
 
+
+------
 #### Basic installation
 ------
 
@@ -22,6 +24,8 @@ import anuga
 print anuga.__path__
 ```
 
+
+------
 ### Installation with version control
 ------
 
@@ -29,5 +33,5 @@ In the basic installation, the files added to the *operators* directory of the A
 
 To keep the new operators under version control, run the `install.py` script with the `--link` flag.
 
-###### What this does:
+##### What this does:
 Running the `install.py` script with the `--link` flag creates symbolic links within the *operators* directory of the ANUGA package that point to the files within *anugaSed/operators*. Any changes made to the operator files in *anugaSed/operators* will be seen by Python when using `import anuga` (including changes using `git`).
