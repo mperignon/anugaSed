@@ -1,16 +1,31 @@
-## Sediment transport and vegetation operators for ANUGA
+# anugaSed
+### Sediment transport and vegetation operators for ANUGA
 
-This package is an add-on to the hydrodynamic model ANUGA.
+This package is an add-on to the hydrodynamic model ANUGA. These operators are used to simulate the erosion, transport, and deposition of sediment across the domain, and the effects of vegetation drag on the flow.
 
-Download ANUGA from [https://github.com/GeoscienceAustralia/anuga_core]
+Download ANUGA from https://github.com/GeoscienceAustralia/anuga_core
 
-By running `install.py`, the modules in the folder *operators* get copied to the operators directory within the ANUGA package. The ANUGA package is the directory that Python calls with the command `import anuga`, and it is probably located within a folder called *site-packages*. To see the location of the ANUGA library in your file system, open a Python interpreter and type:
+#### Basic installation
+
+To install the sediment transport and vegetation operators directly into your Python packages directory, run `install.py`. You should install the operators this way if you don't plan to modify the operator scripts (or do so infrequently).
+
+##### What this does:
+The script `install.py` copies the two `.py` files in the folder *anugaSed/operators* into the *operators* directory of the ANUGA package installed in your computer. The ANUGA package is the directory that Python calls with the command `import anuga`. The installation path for Python packages varies by platform.
+
+If you want you modify the operator scripts after they are installed, you need to directly edit the `.py` files that were added to the *operators* directory of the ANUGA package. Changes to the files within *anugaSed/operators* will NOT be accessible within Python with `import anuga`.
+
+To find the path of the ANUGA package in your file system, open a Python interpreter and type:
 
 ```python
 import anuga
 print anuga.__path__
 ```
 
-If you wish you modify the modules after they are installed, you can directly edit the `.py` files that were added to the ANUGA package. Any changes you make will then be seen by Python scripts that import ANUGA.
+#### Installation with version control
 
-Be aware that the two files that were copied to the ANUGA package are no longer linked to the GitHub repository they came from. To keep the modules under version control, use the `—link` flag when running the `install.py` script. This will create symbolic links within the ANUGA package to the files in this directory instead of creating stand-alone files. Running `git pull` anywhere within the *anugaSed* directory will update your local files with any changes made in the GitHub repository, which will then be accessible by Python with `import anuga`.
+In the basic installation, the files added to the *operators* directory of the ANUGA package are no longer linked to this GitHub repository.
+
+To keep the new operators under version control, run the `install.py` script with the `--link` flag.
+
+##### What this does:
+Running the `install.py` script with the `--link` flag creates symbolic links within the *operators* directory of the ANUGA package that point to the files within *anugaSed/operators*. Any changes made to the operator files in *anugaSed/operators* will be seen by Python when using `import anuga` (including changes using `git`).
