@@ -1,8 +1,8 @@
-##Sediment transport and vegetation operators for ANUGA
+## Sediment transport and vegetation operators for ANUGA
 
 This package is an add-on to the hydrodynamic model ANUGA.
 
-Download ANUGA from [https://github.com/GeoscienceAustralia/anuga_core](https://github.com/GeoscienceAustralia/anuga_core)
+Download ANUGA from [https://github.com/GeoscienceAustralia/anuga_core]
 
 By running `install.py`, the modules in the folder *operators* get copied to the operators directory within the ANUGA package. The ANUGA package is the directory that Python calls with the command `import anuga`, and it is probably located within a folder called *site-packages*. To see the location of the ANUGA library in your file system, open a Python interpreter and type:
 
