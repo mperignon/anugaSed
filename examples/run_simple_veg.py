@@ -16,7 +16,7 @@ from anuga import rectangular_cross
 from anuga import Domain
 from anuga import Dirichlet_boundary
 from anuga import Reflective_boundary
-
+from anuga import Quantity
 
 #===============================================================================
 # Setup Functions
@@ -69,8 +69,7 @@ Store process-specific quantities with same functions
 domain.set_quantities_to_be_stored({'elevation': 2,
                                     'stage': 2,
                                     'xmomentum': 2,
-                                    'ymomentum': 2,
-                                    'concentration': 2})
+                                    'ymomentum': 2})
                                     
 #------------------------------------------------------------------------------
 # Setup boundary conditions
