@@ -3,7 +3,10 @@
 
 This package is an add-on to the hydrodynamic model ANUGA. These operators are used to simulate the erosion, transport, and deposition of sediment across the domain, and the effects of vegetation drag on the flow.
 
-Download ANUGA from https://github.com/GeoscienceAustralia/anuga_core
+Download ANUGA from [https://github.com/GeoscienceAustralia/anuga_core](https://github.com/GeoscienceAustralia/anuga_core)
+
+NOTE: The version of the operators on branch `master` is the latest working version. For the stable version of the operators described in the anugaSed documentation, look at branch `stable`.
+
 
 <br>
 
